@@ -3,7 +3,56 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-	<section>
-		<h1>Hola mundo</h1>
+	<section class="content">
+	<section class="content_home">
+		<section class="content_izquierda">
+			<h1 class="title_home">Bienvenidos a mi Blog</h1>
+				<p>Hola mi nombre es Enrique, espero y les pueda gustar mi blog, aqui encontraras varias cosas que me pasan en el dia asi como un diario.</p>
+			<a href="http://" class="content_button">Ir a los posts</a>
+		</section>
+		<section class="content_derecha">
+			<picture>
+				<source media="(min-width: )" srcset="" sizes="">
+				<img class="imagen" src="/homeperfil.jpg" alt="">
+			</picture>
+		</section>
+	</section>
 	</section>
 </Layout>
+<style>
+.content{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	padding: 10px 0px;
+}
+.content_home{
+	width: 98%;
+	display: flex;
+	align-items: center;
+}
+.title_home{
+	font-weight: bold;
+	font-size: 36px;
+	margin: 0;
+}
+.content_izquierda{
+	width: 50%;
+}
+.content_derecha{
+	width: 50%;
+}
+.content_button{
+	text-decoration: none;
+	background: #0c0c0c;
+	color: #fff;
+    padding: 5px 20px;
+    border-radius: 10px;
+}
+.imagen{
+	width: 100%;
+	height: 80vh;
+    object-fit: cover;
+	border-radius: 10px;
+}
+</style>
