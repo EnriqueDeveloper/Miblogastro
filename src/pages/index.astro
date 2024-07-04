@@ -8,12 +8,12 @@ import Layout from "../layouts/Layout.astro";
 		<section class="content_izquierda">
 			<h1 class="title_home">Bienvenidos a mi Blog</h1>
 				<p>Hola mi nombre es Enrique, espero y les pueda gustar mi blog, aqui encontraras varias cosas que me pasan en el dia asi como un diario.</p>
-			<a href="http://" class="content_button">Ir a los posts</a>
+			<a href="/blog" class="content_button">Ir a los posts</a>
 		</section>
 		<section class="content_derecha">
 			<picture>
 				<source media="(min-width: )" srcset="" sizes="">
-				<img class="imagen" src="/homeperfil.jpg" alt="">
+				<img class="imagen" src="/homeperfil.jpg" alt="" loading="lazy">
 			</picture>
 		</section>
 	</section>
@@ -48,6 +48,9 @@ import Layout from "../layouts/Layout.astro";
 	color: #fff;
     padding: 5px 20px;
     border-radius: 10px;
+}
+.content_button:hover{
+	background: #252525;
 }
 .imagen{
 	width: 100%;
